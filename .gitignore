@@ -137,3 +137,20 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Android
+android/.gradle
+android/.idea
+android/build
+android/app/build
+android/app/.cxx
+android/local.properties
+android/*.iml
+
+# iOS
+ios/Pods
+ios/build
+ios/*.xcworkspace
+ios/*.xcuserstate
+ios/*.xcuserdatad
+ios/.DS_Store
