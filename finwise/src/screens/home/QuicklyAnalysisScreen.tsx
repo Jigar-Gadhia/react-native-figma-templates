@@ -1,10 +1,8 @@
 import React from 'react';
-import {View, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import Container from '../../components/Container';
 import ExpenseComponent from '../../components/ExpenseComponent';
 import {scale} from 'react-native-size-matters';
-import ScreenHeader from '../../components/ScreenHeader';
-import {screenNames} from '../../utils/screenNames';
 import {strings} from '../../localization';
 import {t} from '../../localization/t';
 import CardComponent from '../../components/CardComponent';
@@ -21,14 +19,9 @@ const QuicklyAnalysisScreen: React.FC = () => {
           textColor="caribbeanGreen"
         />
       </View>
-      <CardComponent style={styles.cardStyle}>
-        <ScrollView
-          contentContainerStyle={styles.scrollCardStyle}
-          showsVerticalScrollIndicator={false}
-          contentInset={{bottom: scale(80), top: 0}}>
+      <CardComponent style={styles.cardStyle} scrollStyle={styles.scrollCardStyle}>
           <ExpenseBarChart />
           <TransactionComponent />
-        </ScrollView>
       </CardComponent>
     </Container>
   );

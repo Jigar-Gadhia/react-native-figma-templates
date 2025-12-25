@@ -15,7 +15,7 @@ const BottomNavigation = () => {
   const barStyle = mode === 'dark' ? 'light-content' : 'dark-content';
   return (
     <React.Fragment>
-      <StatusBar barStyle={barStyle} />
+      <StatusBar barStyle={barStyle} translucent />
       <Tab.Navigator
         initialRouteName={screenNames.Home}
         screenOptions={{
